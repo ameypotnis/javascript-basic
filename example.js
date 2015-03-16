@@ -41,16 +41,16 @@ while(number > 0) {
 //Variable types
 // Number
 var length = 16;
-console.log("type of length: " + typeof length);
+console.log('type of length: ' + typeof length);
 // String
 var lastName = "Pqr";
-console.log("type of lastname: " + typeof lastName);
+console.log('type of lastname: ' + typeof lastName);
 // Array
 var colors = ["Red", "Blue", "Green", "White"];
-console.log("type of colors: " + typeof colors);
+console.log('type of colors: ' + typeof colors);
 // Object
 var person = {firstName:"Abp", lastName:"Pqr"};
-console.log("type of person: " + typeof person);
+console.log('type of person: ' + typeof person);
 
 //Creating functions
 function greeting(name) {
@@ -70,11 +70,28 @@ console.log(addition(50,40));
 //Working with arrays
 var colors = ["Red", "Blue", "Green", "White"];
 for(index in colors) {
-    console.log("color index: " + index);
-    console.log("color: " + colors[index]);
+    console.log('color index: ' + index);
+    console.log('color: ' + colors[index]);
 }
 
 var collection = [1, "Abc", 9.99, {"name" : "Abc"}];
 for(index in collection) {
-    console.log("collection item: " + collection[index]);
+    console.log('collection item: ' + collection[index]);
 }
+
+//Working with Date
+var now = new Date();
+console.log('now: ' + now);
+var birthday = new Date('December 17, 2012 03:24:00');
+console.log('birthday: ' + birthday);
+var date1 = new Date(2000, 11, 17);
+console.log('date1: ' + date1);
+
+//Working with Object
+var employee = new Object();
+employee.firstName = 'Abc';
+employee.lastName = 'Pqr';
+console.log('employee name: ' + employee.firstName + ' ' + employee.lastName);
+
+
+
