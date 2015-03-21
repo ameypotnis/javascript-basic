@@ -1,4 +1,4 @@
-//Creating variables
+/*//Creating variables
 var count = 10;
 console.log('count= ' + count);
 
@@ -50,7 +50,7 @@ var colors = ["Red", "Blue", "Green", "White"];
 console.log('type of colors: ' + typeof colors);
 // Object
 var person = {firstName:"Abp", lastName:"Pqr"};
-console.log('type of person: ' + typeof person);
+console.log('type of person: ' + typeof person);*/
 
 //Creating functions
 function greeting(name) {
@@ -69,6 +69,7 @@ console.log(addition(50,40));
 
 //Working with arrays
 var colors = ["Red", "Blue", "Green", "White"];
+colors.push("Black");
 for(index in colors) {
     console.log('color index: ' + index);
     console.log('color: ' + colors[index]);

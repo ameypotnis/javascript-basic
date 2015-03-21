@@ -1,9 +1,16 @@
+//assign function to variable
+var hello = function() {
+    console.log('hello');
+}
+hello();
+
 //variable scope
 function myFunction() {
     var myVar = 10;
     console.log(myVar);
 }
-//console.log(myVar); - error
+myFunction();
+//console.log(myVar);// - error
 
 
 //function in function
@@ -21,12 +28,6 @@ console.log(getCircleArea(20));
     console.log('I am calling myself');
 })();
 
-//assign function to variable
-var hello = function() {
-    console.log('hello');
-}
-hello();
-
 //callback function
 function calculator(a, b, callback) {
     return callback(a, b);
@@ -41,3 +42,12 @@ function substraction(a, b) {
 }
 console.log(calculator(5, 2, addition));
 console.log(calculator(5, 2, substraction));
+
+var Person = function(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+};
+
+var person1 = new Person('Abc', 'Pqr', 20);
+console.log('person1: ' + person1);
