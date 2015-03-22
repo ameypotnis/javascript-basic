@@ -24,9 +24,9 @@ console.log(getCircleArea(10));
 console.log(getCircleArea(20));
 
 //self executing function
-(function selfExecute() {
-    console.log('I am calling myself');
-})();
+(function selfExecute(window) {
+    console.log('I am calling myself' + window);
+})(window);
 
 //callback function
 function calculator(a, b, callback) {
@@ -51,3 +51,5 @@ var Person = function(firstName, lastName, age) {
 
 var person1 = new Person('Abc', 'Pqr', 20);
 console.log('person1: ' + person1);
+var person2 = new Person('iop', 'jkl', 30);
+console.log('person2: ' + person2);
